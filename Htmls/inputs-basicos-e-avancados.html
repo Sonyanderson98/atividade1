@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs Basicos</title>
+</head>
+<body>
+    <h1>Inputs basicos</h1>
+    <form action="https://www.globo.com" method="post">
+            <label>Nome</label><br>
+            <input placeholder="Insira seu nome" type="text" name="nome">
+            <br>
+
+            <label>Senha</label><br>
+            <input placeholder="Insira sua senha" type="password" name="senha"><br>
+
+            <label>Sexo</label><br>
+            <input type="radio" name="Sexo" id="">Masculino
+            <input type="radio" name="Sexo" id="">Feminino <br>
+
+            <label>Selecione os sabores de bolo você gosta</label><br>
+            <input type="checkbox" name="Sabor-bolo" id="">Chocolate
+            <input type="checkbox" name="Sabor-bolo" id="">Cenoura
+            <input type="checkbox" name="Sabor-bolo" id="">Fuba 
+            <br>
+
+            <label>Gostaria de deixar algum depoimento do quanto você ama algum desss sabores:</label><br>
+            <textarea name="depoimento" id="" cols="20" rows="5"></textarea>
+            <br>
+            <label>Você teria alguma foto do bolo que você mais gosta, nós envie:</label><br>
+            <input type="file" name="arquivo" id="">
+    
+        <center>
+            <h1>Aula de inputs Avançados</h1>
+        </center>
+            <label>Digite novamente seu sexo</label>
+            <br>
+                <select name="sexo" id="">
+                    <option selected value="">Selecione</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+                    <p>Testando agora o Group</p>
+                <select name="carro" id="">
+                    <optgroup label="Alemães">
+                        <option value="Meca">Mercedes</option>
+                    </optgroup>
+                    <optgroup label="Chines">
+                        <option value="toyta">Toyota</option>
+                        <option value="Nissan">Nissan</option>
+                    </optgroup>
+                </select><br>
+        <center>
+            <h1>Aula: Formularios - Buttons</h1>
+        </center>
+
+        <input type="button" value="botao sem acao"> 
+        <br><br>
+        <input type="submit" value="Enviar">
+        
+        <br>
+            <center>
+            <h1>Aula de Auto-complete e Placeholder</h1>
+            </center>
+            <label>Nome:</label><br>
+            <input placeholder="Digite seu nome" type="text" name="nome" class="" id="">
+            <br>
+            <label>Senha:</label><br>
+            <input placeholder="Insira sua senha" type="password" name="senha" class="" id="">
+            <br><br>
+            <label>Time</label>
+            <br>
+            <input type="text" placeholder="Insira seu time" name="time" list="lista_time"/>
+            <datalist id="lista_time">
+                <option value="Santos"/>
+                <option value="Palmeiras"/>
+                <option value="Corinthians"/>
+                <option value="Flamengo"/>
+            </datalist>
+            <br><br>
+            <center>
+                <h1>Aula de Inputs especiais</h1>
+            </center>
+                <p>São eles</p>
+                <ul>
+                    <li>Color</li>
+                    <li>Date</li>
+                    <li>Email</li>
+                    <li>Range</li>
+                    <li>Tel</li>
+                    <li>Search</li>
+                </ul>
+                <p>Existem vários outros, mas esses são os principais</p>
+                <p>Como recomendação do Professor Rafael, para acesso de todas as tag de input, ele sugere a <a href="https://www.w3schools.com/tags/tag_input.asp" target="_blank" rel="Site da w3 Schools">W3 Schools</a> na aba direto de TAG de input</p>
+                
+                <b>Exemplos</b>
+
+                <h3>Tag color</h3>
+                <label>Cor: </label>
+                <input type="color" name="cor" id="">
+                <br>
+
+                <h3>Tag de Data</h3>
+                <p><b>OBS:</b>Por mais que exista essa opção Rafael indica a não utilização, devido em alguns outros navegadores ficar com o formato americano, devido a esse problema meio que acaba tendo só mais trabalho no Back-end</p>
+                <label>Data: </label>
+                <input type="date" name="data" id="">
+                <br>
+
+                <h3>Tag de E-mail</h3>
+                <p>Não vemos diferença no navegador, e sim mais no mobile</p>
+                <label>E-mail: </label>
+                <input type="email" name="email" id="">
+                <br>
+
+                <h3>Tag de Range</h3>
+                <p>Input de intervalo: <b>ex: </b>Max e min</p>
+                <label>Range: </label>
+                <input type="range" name="intervalo" id="" min="0" max="100" step="10">
+                <br>
+
+                <h3>Tag Tel</h3>
+                <p>Campo para telefone, mais diferença no mobile que abre direto um teclado númerico</p>
+                <label>Telefone: </label>
+                <input type="tel" name="telefone" id="">
+                <br>
+
+                <h3>Tag Search</h3>
+                <p>Tag usada para buscas, padrão visual só add um x no final do campo de inserção para exclusão do texto já escrito</p>
+                <label>Busca: </label>
+                <input type="search" name="Busca" id="">
+
+    </form>
+    
+</body>
+</html>
